@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <h2>Ussing Inner HTmL</h2>
+        <p>This is First Paragraph</p>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = 10 + 33;
+        </script>
+
+        <h2>Ussing Document.write()</h2>
+        <p>Never call document.write after the document has finished loading.
+            It will overwrite the whole document</p>
+
+            <script>
+                document.write(5 + 7);
+            </script>
+
+            <h2>Document.write using button</h2>
+            <p>Check the click button</p>
+
+            <button type="button" onclick="document.write(5 + 5)";>Click Mi</button>
+
+            <h2>Ussingwindow.alert</h2>
+
+            <script>
+                window.alert(3 + 7);
+                alert(5 + 9);
+            </script>
+
+            
+          <h2>Activate Debugging</h2>
+
+        < p>F12 on your keybord will activate debugging.</p>
+          <p>Then select "Console" in the debugger menu.</p>
+           <p>Then click Run again.</p>
+
+           <script>
+            console.log(5 + 6);
+           </script>
+
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button>
+
+    </body>
+</html>
